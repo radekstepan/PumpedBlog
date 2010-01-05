@@ -172,6 +172,14 @@ class Blog_Controller extends Fari_Controller {
         $this->view->display('rss', 'application/rss+xml');
     }
 
+    public function sitemap() {
+        $sitemap = new Fari_Sitemap('slug', 'published');
+        
+        $articles = Fari_Db::select('articles', 'slug, published', array('status' => 1));
+        
+        echo $sitemap->create($articles, '/blog/article/');
+    }
+
     public function login() {
         if (Fari_User::isAuthenticated('realname')) $this->redirect('/');
 

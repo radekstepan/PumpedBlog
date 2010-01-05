@@ -16,7 +16,7 @@
 // app directory; this directory contains your models, views & controllers
 if (!defined('APP_DIR')) define('APP_DIR', 'application');
 // application version
-if (!defined('APP_VERSION')) define('APP_VERSION', 'PumpedBlog');
+if (!defined('APP_VERSION')) define('APP_VERSION', 'PumpedBlog 0.7.5');
 // default Controller for the application (pages in a CMS)
 if (!defined('DEFAULT_CONTROLLER')) define('DEFAULT_CONTROLLER', 'blog');
 // set to FALSE on live version of your application
