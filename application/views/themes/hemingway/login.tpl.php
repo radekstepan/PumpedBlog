@@ -28,7 +28,7 @@
                         </dl>
                         <dl>
                             <dt>Password:</dt>
-                            <dd><input type="text" class="text" name="password" size="15" /></dd>
+                            <dd><input type="password" class="text" name="password" size="15" /></dd>
                         </dl>
                          <dl>
                             <dt>&nbsp;</dt>
